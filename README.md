@@ -8,3 +8,9 @@
 4. 设置 CSV 导出的默认编码为 `UTF-8`
 5. 修复中文姓名顺序问题
 6. 修复 Typology 翻译问题（应为 类型，非 拓扑，拓扑是 Topology）
+
+## 安装步骤
+
+1. 复制插件到 `extensions` 目录
+2. `chmod +w conf/production/config-itop.php` 使配置文件可写
+3. 浏览器访问 `/setup` ，安装插件时勾选 `iTop 中国用户优化` 即可
