@@ -2,6 +2,13 @@
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
 	<classes>	
 	</classes>
+	<user_rights>
+		<profiles>
+			<profile id="1024">
+				<description _delta="redefine">访问REST Web Service的用户需要有此角色(配置文件中 'secure_rest_services' 设置为 false 可解除此限制)</description>
+			</profile>
+		</profiles>
+	</user_rights>
 	<menus>
 	</menus>
 	<snippets>

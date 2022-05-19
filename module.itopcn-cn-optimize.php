@@ -54,5 +54,11 @@ if (!class_exists('CNOptimizeInstaller')) {
 			$oConfiguration->Set("csv_file_default_charset", "UTF-8");
 			return $oConfiguration;
 		}
+
+		public static function AfterDataLoad(Config $oConfiguration, $sPreviousVersion, $sCurrentVersion) {
+			$oAdmin = MetaModel::GetObject("URP_Profiles", 1);
+			$oAdmin->Set("description", "拥有所有权限(绕过任何控制)");
+			$oAdmin->DBWrite();
+		}
 	}
 }
